@@ -1,0 +1,178 @@
+body
+{
+	margin:0px;
+	padding:0px;
+}
+
+.clearfix
+{
+	overflow:auto;
+}
+
+#backgroundContainer
+{
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,1);
+	z-index:-5;
+}
+
+#colorPickerContainer
+{
+	float:right;
+	width:120px;
+	border: 2px solid black;
+	overflow:auto;
+	z-index:1;
+}
+#colorPickerContainer button
+{
+	font-size:20px;
+	font-family:Arial Black;
+}
+.redButton
+{
+	background-color:red;
+	position: relative;
+}
+
+.greenButton
+{
+	background-color:green;
+	position: relative;
+}
+
+.blueButton
+{
+	background-color:blue;
+	position: relative;
+}
+
+.alphaButton
+{
+	background-color:white;
+	position: relative;
+}
+
+.leftButton
+{
+	float:left;
+	clear:left;
+	padding:5px;
+}
+
+.rightButton
+{
+	float:right;
+	clear:right;
+	padding:5px;
+}
+
+.button
+{
+	width:60px;
+	height:39px;
+}
+#variableContainer
+{
+	padding-left: 10px;
+	float:left;
+	width:120px;
+	border:2px solid black;
+	overflow:auto;
+	z-index:1;
+	background-color: white;
+}
+#randomArea
+{
+	float:none;
+	position: relative;
+	clear:both;
+	padding-top:5px;
+}
+#randomArea button
+{
+	position:relative;
+	margin:5px;
+}
+#activeArea
+{
+	width: 260px;
+	height: auto;
+	padding:30px;
+}
+#hexadecimalArea
+{
+	position:relative;
+	float:none;
+	clear:both;
+	padding-top:5px;
+	border: 2px solid black;
+	background-color:white;
+}
+#hexadecimalArea p
+{
+	text-align:center;
+}
+#playground
+{
+	border: 2px solid black;
+	position:absolute;
+	top:0px;
+	left:300px;
+	width: 930px;
+	height: 738px;
+	background-color:white;
+	margin-top:5px;
+}
+#makeRandomButtonContainer
+{
+	position:relative;
+	float:none;
+	clear:both;
+	padding-top:5px;
+	border: 2px solid black;
+	background-color:white;
+}
+#makeRandomButtonContainer p
+{
+	text-align:center;
+}
+
+#savedColorContainer
+{
+	position:absolute;
+	border:2px solid black;
+	right: 2px;
+	top:0px;
+	width: 275px;
+	height:738px;
+	overflow: auto;
+	background-color:white;
+	margin-top:5px;
+}
+#savedColorContainer h2
+{
+	margin: 10px;
+	text-align:center;
+}
+#innerContainer
+{
+	margin:0 auto;
+	padding:0px;
+	width: 270px;
+	overflow:auto;
+}
+#innerContainer button:hover
+{
+	background-color:orange;
+}
+#innerContainer button
+{
+	background-color:white;
+	width:250px;
+	height:30px;
+	font-size:18px;
+	border:1px solid white;
+	margin:10px;
+}

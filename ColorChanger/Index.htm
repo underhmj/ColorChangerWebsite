@@ -1,0 +1,84 @@
+<html>
+
+<head>
+	<link href="main.css" rel="stylesheet"/>
+	
+</head>
+
+<body onload="loadNumbers()">
+
+	<script src="main.js" type="text/javascript"></script>
+
+	<div id="backgroundContainer">
+		
+		<div id ="activeArea">
+		
+			<div id="colorPickerContainer">
+			
+				<button id="redPlus" class="redButton leftButton button" onmousedown="mousedown(red,'red',1,255)" onmouseup="mouseup()">+</button>
+				
+				<button id="redMinus" class="redButton rightButton button" onmousedown="mousedown(red,'red',-1,255)" onmouseup="mouseup()">-</button>
+				
+				<button id="greenPlus" class="greenButton leftButton button" onmousedown="mousedown(green,'green',1,255)" onmouseup="mouseup()">+</button>
+				
+				<button id="greenMinus" class="greenButton rightButton button" onmousedown="mousedown(green,'green',-1,255)" onmouseup="mouseup()">-</button>
+				
+				<button id="bluePlus" class="blueButton leftButton button" onmousedown="mousedown(blue,'blue',1,255)" onmouseup="mouseup()">+</button>
+				
+				<button id="blueMinus" class="blueButton rightButton button" onmousedown="mousedown(blue,'blue',-1,255)" onmouseup="mouseup()">-</button>
+				
+				<button id="alphaPlus" class="alphaButton leftButton button" onmousedown="mousedown(alpha,'alpha',0.01,1)" onmouseup="mouseup()">+</button>
+				
+				<button id="alphaMinus" class="alphaButton rightButton button" onmousedown="mousedown(alpha,'alpha',-0.01,1)" onmouseup="mouseup()">-</button>
+				
+			</div>
+			
+			<div id="variableContainer">
+				<p style="color:red" id="red"> Red: <span id="redValue"> </span> </p>
+				<p style="color:green" id="green" > Green: <span id="greenValue"> </span> </p>
+				<p style="color:blue" id="blue"> Blue:  <span id="blueValue"> </span> </p>
+				<p id="alpha"> Alpha:  <span id="alphaValue"> </span> </p>
+			</div>
+			
+			<div id="randomArea">
+				<button id="redRandom" style="color:red" onclick="randomColor(true,false,false,false)"> Randomize Red </button>
+				<button id="greenRandom" style="color:green" onclick="randomColor(false,true,false,false)"> Randomize Green </button>
+				<button id="blueRandom" style="color:blue" onclick="randomColor(false,false,true,false)"> Randomize Blue </button>
+				<button id="alphaRandom" onclick="randomColor(false,false,false,true)"> Randomize Alpha </button>
+				<button id="colorRandom" onclick="randomColor(true,true,true,true)"> Random Color </button>
+				<button id="saveColor" onclick="saveColorOther()"> Save Color </button>
+			</div>
+			
+			<div id="hexadecimalArea">
+				<p style="margin-bottom:0px; padding-bottom:0px">Conversion to Hexadecimal</p>
+				<br>
+				<p id="hexadecimalValue"> </p>
+			</div>
+			
+			<div id="makeRandomButtonContainer">
+				<p><button id="makeRandomRectangle" onclick="createARandomSwatch()"> Make A Random Color Swatch </button></p>
+				<p><button id="saveSwatchColor" onclick="saveColorSwatch()"> Save the Swatch Color </button></p>
+				<p> rgba(<span id="sR" type="number"></span>,<span id="sG" type="number"></span>,<span id="sB" type="number"></span>,<span id="sA" type="number"></span>)</p>
+				<p> Hexadecimal <span id="hexiSwatch"></span></p>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+	
+			<div id="playground">
+			
+			</div>
+	
+			<div id="savedColorContainer">
+			<h2> Saved Colors: </h2>
+				<div id="innerContainer">
+				
+				</div>
+			</div>
+
+	
+</body>
+
+</html>
